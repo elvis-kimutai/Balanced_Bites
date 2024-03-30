@@ -3,7 +3,7 @@
 ![](./Streamlit_Frontend\ImageFinder/site.png)
 
 ### Authors
-- Elvis Cheruiyot
+- Elvis Kimutai Cheruiyot
 - Melanie Saina
 
 ### Descreption
