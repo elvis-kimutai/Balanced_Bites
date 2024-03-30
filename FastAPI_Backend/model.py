@@ -36,6 +36,17 @@ def nn_predictor(prep_data):
     return neigh
 
 def build_pipeline(neigh,scaler,params):
+    """
+    Build a pipeline for preprocessing and prediction.
+
+    Arguments:
+    neigh: Trained NearestNeighbors model.
+    scaler: StandardScaler object used for scaling.
+    params: Parameters for NearestNeighbors.
+
+    Returns:
+    pipeline: Pipeline object for preprocessing and prediction.
+    """
     transformer = FunctionTransformer(neigh.kneighbors,kw_args=params)
     pipeline=Pipeline([('std_scaler',scaler),('NN',transformer)])
     return pipeline
