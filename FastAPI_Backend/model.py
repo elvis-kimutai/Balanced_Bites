@@ -120,6 +120,15 @@ def recommend(dataframe,_input,ingredients=[],params={'n_neighbors':5,'return_di
             return None
 
 def extract_quoted_strings(s):
+    """
+    Extract strings enclosed in double quotes from a given string.
+
+    Arguments:
+    s: Input string containing quoted strings.
+
+    Returns:
+    List of strings enclosed in double quotes.
+    """
     # Find all the strings inside double quotes
     strings = re.findall(r'"([^"]*)"', s)
     # Join the strings with 'and'
