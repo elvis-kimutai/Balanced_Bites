@@ -7,6 +7,16 @@ from sklearn.preprocessing import FunctionTransformer
 
 
 def scaling(dataframe):
+    """
+    Perform data scaling using StandardScaler.
+
+    Arguments:
+    dataframe: Pandas DataFrame containing the data to be scaled.
+
+    Return:
+    prep_data: Scaled data.
+    scaler: StandardScaler object used for scaling.
+    """
     scaler=StandardScaler()
     prep_data=scaler.fit_transform(dataframe.iloc[:,6:15].to_numpy())
     return prep_data,scaler
