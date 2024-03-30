@@ -52,6 +52,16 @@ def build_pipeline(neigh,scaler,params):
     return pipeline
 
 def extract_data(dataframe,ingredients):
+    """
+    Extract relevant data based on ingredients.
+
+    Arguments:
+    dataframe: Original DataFrame containing recipe data.
+    ingredients: List of ingredients to filter data.
+
+    Returns:
+    extracted_data: Extracted DataFrame based on ingredients.
+    """
     extracted_data=dataframe.copy()
     extracted_data=extract_ingredient_filtered_data(extracted_data,ingredients)
     return extracted_data
