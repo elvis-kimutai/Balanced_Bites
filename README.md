@@ -1,6 +1,6 @@
 # Diet Planner
 #### *A heathy food recommendation app*
-![](./Streamlit_Frontend\ImageFinder/site.png)
+![](Streamlit_Frontend\ImageFinder/site.png)
 
 ### Authors
 - Elvis Kimutai Cheruiyot
@@ -27,3 +27,6 @@ A web stack portfolio project typically demonstrates the developer's proficiency
 - Git and GitHub
 
 ## Getting Started
+### docker-compose
+
+** docker-compose up -d --build **
