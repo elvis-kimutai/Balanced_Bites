@@ -4,7 +4,7 @@
 
 ### Authors
 - Elvis Kimutai Cheruiyot
-- Melanie Saina
+- Melanie Cherono Saina
 
 ### Descreption
 This system aims at providing personalized dietary recommendations tailored to individual users and their specific detary aims . This can empower individuals to make informed food choices and support them in achieving their health goals, such as weight control and management, managing and monitoring health conditions, or improving overall their nutrition
