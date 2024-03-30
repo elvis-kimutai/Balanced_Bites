@@ -9,6 +9,7 @@ dataset=pd.read_csv('../Data/dataset.csv',compression='gzip')
 
 app = FastAPI()
 
+# Defining models for parameters used in prediction
 
 class params(BaseModel):
     n_neighbors:int=5
