@@ -98,6 +98,18 @@ def apply_pipeline(pipeline,_input,extracted_data):
     return extracted_data.iloc[pipeline.transform(_input)[0]]
 
 def recommend(dataframe,_input,ingredients=[],params={'n_neighbors':5,'return_distance':False}):
+    """
+    Generate recipe recommendations based on input data.
+
+    Arguments:
+    dataframe: Original DataFrame containing recipe data.
+    _input: Input data for recommendation.
+    ingredients: List of ingredients to consider.
+    params: Parameters for recommendation.
+
+    Returns:
+    Recommended recipes based on input data.
+    """
         extracted_data=extract_data(dataframe,ingredients)
         if extracted_data.shape[0]>=params['n_neighbors']:
             prep_data,scaler=scaling(extracted_data)
