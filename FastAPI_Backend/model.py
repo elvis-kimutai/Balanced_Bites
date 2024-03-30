@@ -131,7 +131,7 @@ def extract_quoted_strings(s):
     """
     # Find all of the strings inside double quotes
     strings = re.findall(r'"([^"]*)"', s)
-    # Join the strings with 'and'
+    # Join the recommended strings with 'and'
     return strings
 
 def output_recommended_recipes(dataframe):
