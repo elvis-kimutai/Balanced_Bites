@@ -83,6 +83,17 @@ def extract_ingredient_filtered_data(dataframe,ingredients):
     return extracted_data
 
 def apply_pipeline(pipeline,_input,extracted_data):
+    """
+    Apply the pipeline for preprocessing and prediction.
+
+    Args:
+    pipeline: Pipeline object for preprocessing and prediction.
+    _input: Input data for prediction.
+    extracted_data: DataFrame containing extracted data.
+
+    Returns:
+    Extracted recipe based on the input.
+    """
     _input=np.array(_input).reshape(1,-1)
     return extracted_data.iloc[pipeline.transform(_input)[0]]
 
