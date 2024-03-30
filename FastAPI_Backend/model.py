@@ -22,6 +22,15 @@ def scaling(dataframe):
     return prep_data,scaler
 
 def nn_predictor(prep_data):
+    """
+    Build and train a nearest neighbors model.
+
+    Arguments:
+    prep_data: Scaled data used to train the model.
+
+    Returns:
+    neigh: Trained NearestNeighbors model.
+    """
     neigh = NearestNeighbors(metric='cosine',algorithm='brute')
     neigh.fit(prep_data)
     return neigh
