@@ -67,6 +67,16 @@ def extract_data(dataframe,ingredients):
     return extracted_data
     
 def extract_ingredient_filtered_data(dataframe,ingredients):
+    """
+    Filter DataFrame based on ingredients.
+
+    Arguments:
+    dataframe: Original DataFrame containing recipe data.
+    ingredients: List of ingredients to filter data.
+
+    Returns:
+    extracted_data: Filtered DataFrame based on ingredients.
+    """
     extracted_data=dataframe.copy()
     regex_string=''.join(map(lambda x:f'(?=.*{x})',ingredients))
     extracted_data=extracted_data[extracted_data['RecipeIngredientParts'].str.contains(regex_string,regex=True,flags=re.IGNORECASE)]
