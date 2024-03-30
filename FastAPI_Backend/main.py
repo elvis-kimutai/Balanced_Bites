@@ -41,6 +41,7 @@ class Recipe(BaseModel):
 class PredictionOut(BaseModel):
     output: Optional[List[Recipe]] = None
 
+# Defining the routes 
 
 @app.get("/")
 def home():
