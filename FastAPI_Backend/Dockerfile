@@ -12,7 +12,7 @@ COPY FastAPI_Backend app/backend
 WORKDIR /app/backend
 
 RUN pip install --upgrade pip
-# Install altair package
+# Installing altair package
 RUN pip install altair==4.1.0
 RUN pip install -r requirements.txt
 
