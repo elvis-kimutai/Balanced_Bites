@@ -129,7 +129,7 @@ def extract_quoted_strings(s):
     Returns:
     List of strings enclosed in double quotes.
     """
-    # Find all the strings inside double quotes
+    # Find all of the strings inside double quotes
     strings = re.findall(r'"([^"]*)"', s)
     # Join the strings with 'and'
     return strings
