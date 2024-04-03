@@ -1,6 +1,6 @@
 # Diet Planner
 #### *A heathy food recommendation app*
-![](Streamlit_Frontend\ImageFinder/site.png)
+![](./Streamlit_Frontend/ImageFinder/site.png)
 
 ### Authors
 - Elvis Kimutai Cheruiyot
@@ -27,6 +27,27 @@ A web stack portfolio project typically demonstrates the developer's proficiency
 - Git and GitHub
 
 ## Getting Started
-### docker-compose
 
-** docker-compose up -d --build **
+### 1. Clone the repo
+
+``` sh
+git clone https://github.com/elvis-kimutai/Balanced_Bites.git
+
+``` 
+### 2. Install dependancies
+
+``` sh
+pip install -r requirements.txt
+```
+### 3. docker-compose
+
+``` sh
+docker-compose up -d --build
+```
+``` sh 
+cd Streamlit_Frontend
+
+*run* streamlit run Hello.py
+```
+
+#### Then visit http://localhost:8501
